@@ -1,0 +1,112 @@
+
+
+body {
+  font-family: Arial;
+  background-color: #1a1713;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.odd {
+  background-color: #6d8891;
+  color: ;
+  width: 60%;
+  margin-left: 15%;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  border: ridge #dfe6ea 10px;
+  font-family: 'Charmonman', cursive;
+  font-size: 1.25em;
+  font-weight:520;
+}
+
+.even {
+  background-color: #cda20b;
+  color: ;
+  width: 60%;
+  margin-left: 25%;
+  padding: 10px 10px 10px 10px;
+  text-align: center;
+  border: ridge #ff9d0c 10px;
+  font-family: 'Charmonman', cursive;
+  font-size: 1.25em;
+  font-weight:520;
+}
+
+p {
+  font-size: 1.2em;
+}
+
+.Skeptic {
+  text-align: left;
+  font-size: 1.4 em;
+}
+
+.Devout {
+  text-align: right;
+  font-size: 1.4 em;
+}
+
+Header {
+  background-color: #6b3603;
+  border: ridge #57160a 10px;
+  padding: 10px;
+}
+
+.Title{
+  color: #cda20b;
+  text-align: center;
+}
+
+a:link {
+  color: #c4915e;
+}
+
+a:visited {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #cda20b;
+}
+
+a:active {
+  color: #dfe6ea;
+}
+
+a {
+  text-decoration: none;
+}
+
+.left {
+  float: left;
+  border: solid black 5px;
+}
+
+.right {
+  float: right;
+  border: solid black 5px;
+}
+
+i {
+  position: absolute;
+  font-size: 4em;
+  padding: 12px;
+  top: 15px;
+  right: 15px;
+}
+
+.portrait {
+  width: 200px;
+  border: black 5px solid;
+}
+
+.Me {
+  background-color: #cda20b;
+  width: 50%;
+  margin: auto;
+  padding: 10px 10px 10px 10px;
+  border: ridge #ff9d0c 10px;
+}

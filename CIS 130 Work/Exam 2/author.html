@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      background-color: #212121;
+    }
+
+    .tab {
+      width: 99.9%;
+      overflow: hidden;
+      border: 1px solid #000000;
+      background-color: #ff9d0c;
+    }
+
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: 1px solid #000000;
+      outline: none;
+      cursor: pointer;
+      width: 33.33%;
+      padding: 10px 10px 10px 10px;
+      transition: 0.3s;
+      font-size: 1.2em;
+      font-weight: bold;
+    }
+
+    .tab button:hover {
+      background-color: #d39741;
+    }
+
+    .tab button.active {
+      background-color: #ff9d0c;
+    }
+
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      background-color: #cda20b;
+      border: 2px solid #000000;
+      border-top: none;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <i class="fas fa-scroll"></i>
+    <nav>
+      <h1>
+        Navigation
+      </h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="author.html">Characters</a></li>
+        <li><a href="user.html">Transcriptionist</a></li>
+      </ul>
+    </nav>
+
+
+
+    <h2>Tabs</h2>
+    <p>Click on the buttons inside the tabbed menu:</p>
+  </header>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'Marquis')">Marquis De Sade</button>
+    <button class="tablinks" onclick="openCity(event, 'Skeptic')">Dying Man</button>
+    <button class="tablinks" onclick="openCity(event, 'Priest')">Priest</button>
+  </div>
+
+  <div id="Marquis" class="tabcontent">
+    <h3>Marquis De Sade</h3>
+    <img class="portrait" src="desade.jpg" alt="Marquis De Sade">
+    <p>A rather infamous and controversial figure, Marquis De Sade was a prolific writer who spent much of his life in between various prisons and asylums due to being particularly libertine in his way of living, acts of blasphemy during a period where theocratic leanings were still strong in much of Europe, his bisexuality during a time where sodomy was punishable by death (for which he was sentenced in absentia though he avoided execution), and the various scandals. Despite his notoriety he remained a prolific writer and philosopher whose stark refusal to abide by societal norms of the time, and revolutionary stances proved impactful on a number of notable figures and to a lesser degree on societal shifts as a whole. The nature of his controvesial life, the burning of much of his unpublished works, the abundance of enemies made during his life, and the period in which he lived together make certain aspects of his life hazy. </p>
+  </div>
+
+  <div id="Skeptic" class="tabcontent">
+    <h3>Dying Man</h3>
+    <img class="portrait" src="skeptic.jpg" alt="Dying Man">
+    <p>A libertine and skeptic within the dialogue, within the dialogue they are presented upon their deathbed discussing their circumstance and regrets with the Priest, while also heavily dealing with their thoughts on morality, existence, and religion in general.</p>
+  </div>
+
+  <div id="Priest" class="tabcontent">
+    <h3>Priest</h3>
+    <img class="portrait" src="devout.jpg" alt="Jesuit Priest">
+    <p>A priest who has come to offer last rites to a man on his deathbed. Given the Marquis De Sade's own Jesuit schooling, the prevalence of catholocism in general, and the specifics of the discussion it would seem that the priest similarly is intended to be a Jesuit Priest.</p>
+  </div>
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+  <footer>
+    <p>
+      &copy; Daniel Causey
+    </p>
+  </footer>
+</body>
+
+</html>
